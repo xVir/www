@@ -8,8 +8,9 @@ class RecordsController extends AppController{
 	}
 
 	public function view($qualifier = null) {
-		$this->Record->qualifier = $qualifier;
-		$this->set('record', $this->Record->read());
+		//debug($this->Record->read(null,$qualifier));
+		
+		$this->set('record', $this->Record->read(null, $qualifier));
 	}
 
 	public function add() {

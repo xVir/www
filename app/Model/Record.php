@@ -2,6 +2,7 @@
 class Record extends AppModel{
 	public $useTable = 'record';
 	public $primaryKey = 'qualifier';
+	public $recursive = 2;
 
 	public $hasMany = array(
 			'Name' => array(
