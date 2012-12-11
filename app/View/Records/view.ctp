@@ -36,6 +36,8 @@
 		<th>Value</th>
 		<th>Valid from</th>
 		<th>Valid to</th>
+		<th></th>
+		<th></th>
 	</tr>
 
 	<?php foreach ($record['Location'] as $loc): ?>
@@ -56,6 +58,9 @@
 		</td>
 		<td><?php echo $loc['BeginDocument']['document_date'] ?></td>
 		<td><?php echo $loc['EndDocument']['document_date'] ?></td>
+
+		<td><?php echo $this->Html->link('View', array('controller'=>'locations', 'action'=>'view', $loc['id'])) ?></td>
+		<td></td>
 	</tr>
 	<?php endforeach; ?>
 	<?php unset($loc); ?>
