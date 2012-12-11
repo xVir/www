@@ -1,4 +1,5 @@
 <h1>Records</h1>
+<p><?php echo $this->Html->link('Add Record', array('action' => 'add')) ?></p>
 <table>
     <tr>
         <th>Qualifier</th>
