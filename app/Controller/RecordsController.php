@@ -52,5 +52,19 @@ class RecordsController extends AppController{
 		}
 	}
 
+	public function find(){
+		if ($this->request->is('get')) {
+			
+		}
+		else {
+			$name = $this->request->data['Search']['name'];
+			//debug('name='.$name);
+
+			$qualifiers = $this->Record->Name->query('SELECT DISTINCT ("Name"."qualifier") as qualifiers FROM "name" AS "Name" LEFT JOIN "public"."record" AS "Record" ON ("Name"."qualifier" = "Record"."qualifier") WHERE "Name"."name" LIKE \'%'.$name.'%\'');
+	
+			$this->set('qualifiers', $qualifiers);
+		}
+	}
+
 }
 ?>

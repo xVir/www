@@ -11,6 +11,10 @@ class Location extends AppModel{
 			'EndDocument' => array(
 					'className' => 'Document',
 					'foreignKey' => 'end_document_id'
+				),
+			'Record' => array(
+					'className' => 'Record',
+					'foreignKey' => 'qualifier'
 				)
 		);
 }
