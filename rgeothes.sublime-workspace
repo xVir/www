@@ -1,0 +1,314 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"array",
+				"array"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/Model/Record.php",
+			"settings":
+			{
+				"buffer_size": 73,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Controller/RecordsController.php",
+			"settings":
+			{
+				"buffer_size": 185,
+				"line_ending": "Windows",
+				"name": "class RecordsController extends AppController{"
+			}
+		},
+		{
+			"file": "app/View/Records/index.ctp",
+			"settings":
+			{
+				"buffer_size": 496,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ini",
+				"Set Syntax: INI"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp/www/README.md",
+		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences (Windows).sublime-settings",
+		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/SublimeCodeIntel/.codeintel/config",
+		"/C/wamp/www/app/Config/database.php",
+		"/C/wamp/bin/php/php5.4.3/php.ini",
+		"/C/wamp/apps/phpPgAdmin-5.0.4/conf/config.inc.php",
+		"/C/wamp/alias/phppgadmin.conf",
+		"/C/Users/Danil/Dropbox/Аспирантура/DICR-2012/request.txt",
+		"/C/Users/Danil/Dropbox/Аспирантура/DICR-2012/baikal_region.xml",
+		"/C/ZooPARK/data/rgeot/rgeot_zthes_xml.xml",
+		"/C/Users/Danil/AppData/Local/Temp/Temp1_cakephp-cakephp-2.2.4-0-g0b508b8.zip/cakephp-cakephp-b2812f2/README.md",
+		"/C/ZooPARK/data/rgeot/rgeot.z39",
+		"/C/wamp/bin/apache/apache2.2.22/conf/httpd.conf",
+		"/C/wamp/www/lib/Cake/Utility/Debugger.php",
+		"/C/wamp/www/app/Config/core.php",
+		"/C/ZooPARK/data/srv_start_debug.cmd",
+		"/C/Users/Danil/Dropbox/Аспирантура/DICR-2012/query.sql",
+		"/C/Users/Danil/Dropbox/Аспирантура/search_form/result_example.txt",
+		"/C/Users/Danil/Dropbox/Аспирантура/search_form/form_structure.xml",
+		"/C/Users/Danil/Dropbox/Аспирантура/RCDL-2012/отчет2.html",
+		"/C/Users/Danil/Dropbox/Аспирантура/RCDL-2012/отчет.html",
+		"/C/Users/Danil/Documents/Полигон 1.kml",
+		"/C/Users/Danil/Documents/Полигон 0.kml",
+		"/C/workspace/java/RGeoThes/src/edu/ict/rgeothes/tools/NskReestrParser.java",
+		"/C/workspace/java/RGeoThes/src/edu/ict/rgeothes/tools/NskImporter.java",
+		"/C/Users/Danil/Downloads/_SVG-mo_1933.zmp",
+		"/C/workspace/java/RGeoThes/src/edu/ict/rgeothes/tools/PDFParser.java",
+		"/C/Users/Danil/Dropbox/Аспирантура/RCDL-2012/table.html",
+		"/C/Program Files/Total Commander/WINCMD.INI",
+		"/C/ZooPARK/data/zserver.cfg",
+		"/C/ZooPARK/tab/rgeothes.att",
+		"/C/workspace/java/RGeoThes/README"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"        \n",
+			"Security.salt",
+			"IfModule",
+			"postgre",
+			"6"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/Model/Record.php",
+					"settings":
+					{
+						"buffer_size": 73,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								73,
+								73
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Controller/RecordsController.php",
+					"settings":
+					{
+						"buffer_size": 185,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"auto_name": "class RecordsController extends AppController{",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/View/Records/index.ctp",
+					"settings":
+					{
+						"buffer_size": 496,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								496,
+								496
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true
+}
