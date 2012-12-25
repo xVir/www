@@ -1,6 +1,6 @@
 <?php
 class RecordsController extends AppController{
-	public $helpers = array('Html', 'Form', 'Session');
+	public $helpers = array('Html', 'Form', 'Session','GoogleMapV3');
 	public $components = array('Session');
 
 	public function index() {

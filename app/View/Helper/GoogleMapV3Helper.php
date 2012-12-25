@@ -91,13 +91,15 @@ class GoogleMapV3Helper extends Helper {
 	var $defaultLocalize=true;					//Boolean to localize your position or not
 	var $defaultMarker=true;					//Boolean to put a marker in the position or not
 	var $defaultMarkerIcon='http://google-maps-icons.googlecode.com/files/home.png'; //Default icon of the marker
-	var $defaultInfoWindow=true;				//Boolean to show an information window when you click the marker or not
+	var $defaultInfoWindow=false;				//Boolean to show an information window when you click the marker or not
 	var $defaultWindowText='My Position';		//Default text inside the information window
 		
 	//DEFAULT MARKER OPTIONS (function addMarker())
 	var $defaultInfoWindowM=true;		//Boolean to show an information window when you click the marker or not
 	var $defaultWindowTextM=' ';		//Default text inside the information window
 	
+	var $defaultRegionSelectAllowed = false;
+	//NOTE if regionSelectAllowed set, also regionSelectFieldName must be set 
 	
 	/** 
      * Function map 
@@ -125,7 +127,10 @@ class GoogleMapV3Helper extends Helper {
 		if(!isset($markerIcon)) $markerIcon=$this->defaultMarkerIcon;	
 		if(!isset($infoWindow)) $infoWindow=$this->defaultInfoWindow;	
 		if(!isset($windowText)) $windowText=$this->defaultWindowText;	
-		
+		if(!isset($regionSelectAllowed)) $windowText=$this->defaultRegionSelectAllowed;
+
+		if(!isset($regionSelectFieldName)) $regionSelectAllowed = false;
+
 		echo '<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>';
 		
 		$map = "<div id=\"map_canvas\" style=\"width:".$width."; height:".$height."\"></div>";
@@ -137,11 +142,30 @@ class GoogleMapV3Helper extends Helper {
 		    var map;
 		    var myOptions = {
 		      zoom: ".$zoom.",
-		      mapTypeId: google.maps.MapTypeId.".$type."
+		      mapTypeId: google.maps.MapTypeId.".$type.",
+
 		    };
 		    map = new google.maps.Map(document.getElementById(\"map_canvas\"), myOptions);
 		";
-		if($localize) $map .= "localize();"; else $map .= "map.setCenter(noLocation);";
+
+		if($regionSelectAllowed) 
+		{
+			$map .= "google.maps.event.addListener(map, 'click', function(event) {
+       						placeRegionMarker(event.latLng);
+    				 });";			
+		}
+
+		if($regionSelectAllowed) 
+		{	
+			$map .= "
+			  var lineCoordinates = null;
+  			  var line = null;
+			";
+		}
+
+		if($localize) $map .= "localize();"; 
+		else $map .= "map.setCenter(noLocation);";
+
 		$map .= "
 			function localize(){
 		        if(navigator.geolocation) { // Try W3C Geolocation method (Preferred)
@@ -149,9 +173,10 @@ class GoogleMapV3Helper extends Helper {
 		            navigator.geolocation.getCurrentPosition(function(position) {
 		              initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 		              map.setCenter(initialLocation);";
-					  if($marker) $map .= "setMarker(initialLocation);";
+
+		if($marker) $map .= "setMarker(initialLocation);";
 		                       
-		            $map .= "}, function() {
+		$map .= "}, function() {
 		              handleNoGeolocation(browserSupportFlag);
 		            });
 		            
@@ -161,9 +186,10 @@ class GoogleMapV3Helper extends Helper {
 		            geo.getCurrentPosition(function(position) {
 		              initialLocation = new google.maps.LatLng(position.latitude,position.longitude);
 		              map.setCenter(initialLocation);";
-					  if($marker) $map .= "setMarker(initialLocation);";         
+
+		if($marker) $map .= "setMarker(initialLocation);";         
 		        
-		            $map .= "}, function() {
+		$map .= "}, function() {
 		              handleNoGeolocation(browserSupportFlag);
 		            });
 		        } else {
@@ -183,7 +209,63 @@ class GoogleMapV3Helper extends Helper {
 		        }
 		        map.setCenter(initialLocation);
 		        map.setZoom(3);
-		    }";
+		    }
+
+		    function printCoordinatesToField(coordinates, fieldId) {
+    			var field = document.getElementById(fieldId);
+    			var resultString = \"\";
+
+    			coordinates.forEach(function(locationItem, index) {
+    			  resultString = resultString + \" \" + locationItem.lat() + \",\" + locationItem.lng();
+    			});
+
+    			field.value = resultString;
+
+  			  }
+
+  			function placeRegionMarker(location) {
+  
+    			if (lineCoordinates==null) {
+		    		lineCoordinates = new google.maps.MVCArray();
+		    		lineCoordinates.push(location);
+		
+		    		if (line!=null) {
+		    		   line.setMap(null);
+		    		   line=null;
+		    		};
+		
+		    		line = new google.maps.Polygon({
+		    		  path: lineCoordinates,
+		    		  strokeColor: \"#FF0000\",
+		    		  strokeOpacity: 1.0,
+		    		  strokeWeight: 2,
+		    		  editable: true,
+		    		});
+		
+		    		line.setMap(map); 
+		
+		    		google.maps.event.addListener(lineCoordinates, 'insert_at', function() {
+		    		  printCoordinatesToField(line.getPath(), \"".$regionSelectFieldName."\");
+		    		});
+		
+		    		google.maps.event.addListener(lineCoordinates, 'remove_at', function() {
+		    		  printCoordinatesToField(line.getPath(), \"".$regionSelectFieldName."\");
+		    		});
+		
+		    		google.maps.event.addListener(lineCoordinates, 'set_at', function() {
+		    		  printCoordinatesToField(line.getPath(), \"".$regionSelectFieldName."\");
+		    		});
+		
+		    	}
+		    	else{
+		    		lineCoordinates.push(location);
+		    	};
+		
+    			printCoordinatesToField(lineCoordinates, \"".$regionSelectFieldName."\");
+    
+  			}
+
+		    ";
 
 		    $map .= "
 			function setMarker(position){
@@ -198,13 +280,14 @@ class GoogleMapV3Helper extends Helper {
 		            icon: image,
 		            title:\"My Position\"
 		        });";
+		     
 		     if($infoWindow){   
 		     	$map .= "google.maps.event.addListener(marker, 'click', function() {
 								infowindow.open(map,marker);
 		        			});";
 		     }
-		     $map .= "}";
-		$map .= "</script>";
+		     $map .= "}\n";
+		$map .= "</script>\n\n";
 		return $map;
 	}
 	

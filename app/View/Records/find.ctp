@@ -1,7 +1,23 @@
 <p>Search</p>
 <?php
     echo $this->Form->create('Record', array('action' => 'find'));
-    echo $this->Form->input('Search.name', array('type'=>'text'));
+    echo $this->Form->input('Search.name', array('label'=>'Name', 'type'=>'text'));
+    echo $this->Form->input('Search.useDate', array('label'=>'Enable date', 'type'=>'checkbox'));
+    echo $this->Form->input('Search.dateFrom', array('label'=>'Date From',
+    	 'type'=>'date', 'dateFormat'=>'MY'));
+    echo $this->Form->input('Search.dateTo', array('label'=>'Date To',
+    	 'type'=>'date', 'dateFormat'=>'MY'));
+
+    echo $this->Form->input('Search.useRegion', array('label'=>'Use region', 'type'=>'checkbox'));
+
+    echo $this->GoogleMapV3->map(array('localize'=>false, 
+    	'width'=>'500px', 
+    	'height'=>'500px',
+    	'regionSelectAllowed'=>true,
+    	'regionSelectFieldName'=>"SearchRegion"));
+
+    echo $this->Form->input('Search.region', array('type'=>'hidden'));
+
     echo $this->Form->end('Search');
 ?>
 

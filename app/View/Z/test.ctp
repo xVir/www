@@ -1,4 +1,4 @@
 <?php
     //phpinfo();
-	 yaz_connect('localhost');
+	// yaz_connect('localhost');
 ?>
