@@ -15,13 +15,16 @@
 <table>
 	<tr>
 		<th>Qualifier</th>
-		<th></th>
+		<th>Name</th>
 	</tr>
 
 	<?php foreach ($qualifiers as $q): ?>
 	<?php $qualifier = $q[0]['qualifiers']; ?>
+	<?php $name = $q[0]['names']; ?>
 		<tr>
 			<td><?php echo $this->Html->link($qualifier, array('controller'=>'records', 'action'=>'view', $qualifier)); ?></td>
+
+			<td><?php echo $name ?></td>
 		</tr>	
 	<?php endforeach; ?>
 	<?php unset($qualifier); ?>

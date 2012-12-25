@@ -60,7 +60,7 @@ class RecordsController extends AppController{
 			$name = $this->request->data['Search']['name'];
 			//debug('name='.$name);
 
-			$qualifiers = $this->Record->Name->query('SELECT DISTINCT ("Name"."qualifier") as qualifiers FROM "name" AS "Name" LEFT JOIN "public"."record" AS "Record" ON ("Name"."qualifier" = "Record"."qualifier") WHERE "Name"."name" LIKE \'%'.$name.'%\'');
+			$qualifiers = $this->Record->Name->query('SELECT ("Name"."qualifier") as qualifiers, ("Name"."name") as names FROM "name" AS "Name" LEFT JOIN "public"."record" AS "Record" ON ("Name"."qualifier" = "Record"."qualifier") WHERE lower("Name"."name") LIKE \'%'.$name.'%\'');
 	
 			$this->set('qualifiers', $qualifiers);
 		}

@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"lon",
+				"longitude"
+			],
+			[
+				"strp",
+				"strpos"
+			],
+			[
+				"locatio",
+				"locationValue"
+			],
+			[
+				"htm",
+				"Html"
+			],
+			[
+				"td",
+				"td	Tag"
+			],
+			[
+				"is_n",
+				"is_null"
+			],
+			[
+				"fore",
+				"foreignKey"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
 				"array",
 				"array"
 			]
@@ -12,10 +48,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/Model/Record.php",
+			"file": "app/View/Records/index.ctp",
 			"settings":
 			{
-				"buffer_size": 73,
+				"buffer_size": 575,
 				"line_ending": "Windows"
 			}
 		},
@@ -23,16 +59,31 @@
 			"file": "app/Controller/RecordsController.php",
 			"settings":
 			{
-				"buffer_size": 185,
-				"line_ending": "Windows",
-				"name": "class RecordsController extends AppController{"
+				"buffer_size": 1983,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/View/Records/index.ctp",
+			"file": "app/View/Records/find.ctp",
 			"settings":
 			{
-				"buffer_size": 496,
+				"buffer_size": 657,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Model/Name.php",
+			"settings":
+			{
+				"buffer_size": 433,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Model/Location.php",
+			"settings":
+			{
+				"buffer_size": 417,
 				"line_ending": "Windows"
 			}
 		}
@@ -44,12 +95,60 @@
 		"selected_items":
 		[
 			[
-				"pac",
-				"Package Control: List Packages"
+				"gs",
+				"Git: Status"
+			],
+			[
+				"gc",
+				"Git: Commit"
+			],
+			[
+				"ga",
+				"Git: Add..."
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"g a",
+				"Git: Add..."
+			],
+			[
+				"g co",
+				"Git: Commit"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git as",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Status"
 			],
 			[
 				"insta",
 				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
 			],
 			[
 				"sql",
@@ -80,7 +179,7 @@
 	},
 	"console":
 	{
-		"height": 125.0
+		"height": 218.0
 	},
 	"distraction_free":
 	{
@@ -93,6 +192,26 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/app/View/Locations/view.ctp",
+		"/C/wamp/www/app/View/Records/view.ctp",
+		"/C/wamp/www/app/Controller/LocationsController.php",
+		"/C/wamp/www/app/Controller/RecordsController.php",
+		"/C/wamp/www/app/View/Helper/GoogleMapV3Helper.php",
+		"/C/wamp/www/app/View/Layouts/default.ctp",
+		"/C/Users/Danil/Dropbox/Аспирантура/выделение области на карте.html",
+		"/C/wamp/www/app/View/Records/index.ctp",
+		"/C/wamp/www/app/Model/Record.php",
+		"/C/wamp/www/app/Model/RecordReference.php",
+		"/C/wamp/www/app/Model/Name.php",
+		"/C/wamp/www/app/Model/Document.php",
+		"/C/wamp/www/app/Model/Location.php",
+		"/C/wamp/www/app/View/Records/add.ctp",
+		"/C/wamp/www/app/View/Records/edit.ctp",
+		"/C/wamp/www/build.properties",
+		"/C/wamp/www/.htaccess",
+		"/C/wamp/www/.git/config",
+		"/C/wamp/www/.gitignore",
+		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings",
 		"/C/wamp/www/README.md",
 		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences (Windows).sublime-settings",
@@ -144,6 +263,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"BeginDocument",
+			"h1",
+			"(\n",
+			"post",
+			"Post",
 			"        \n",
 			"Security.salt",
 			"IfModule",
@@ -166,28 +290,30 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/Model/Record.php",
+					"file": "app/View/Records/index.ctp",
 					"settings":
 					{
-						"buffer_size": 73,
+						"buffer_size": 575,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								73,
-								73
+								456,
+								301
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -200,21 +326,49 @@
 					"file": "app/Controller/RecordsController.php",
 					"settings":
 					{
-						"buffer_size": 185,
+						"buffer_size": 1983,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								161,
-								161
+								1883,
+								1883
 							]
 						],
 						"settings":
 						{
-							"auto_name": "class RecordsController extends AppController{",
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 741.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/View/Records/find.ctp",
+					"settings":
+					{
+						"buffer_size": 657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								240,
+								240
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -223,26 +377,52 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/View/Records/index.ctp",
+					"buffer": 3,
+					"file": "app/Model/Name.php",
 					"settings":
 					{
-						"buffer_size": 496,
+						"buffer_size": 433,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								496,
-								496
+								226,
+								226
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/Model/Location.php",
+					"settings":
+					{
+						"buffer_size": 417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								406,
+								406
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -284,6 +464,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.git":
+	{
+		"height": 124.0
+	},
 	"replace":
 	{
 		"height": 0.0
