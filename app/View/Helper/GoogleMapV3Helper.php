@@ -216,10 +216,10 @@ class GoogleMapV3Helper extends Helper {
     			var resultString = \"\";
 
     			coordinates.forEach(function(locationItem, index) {
-    			  resultString = resultString + \" \" + locationItem.lat() + \",\" + locationItem.lng();
+    			  resultString = resultString + locationItem.lat() + \",\" + locationItem.lng() + \",\" ;
     			});
 
-    			field.value = resultString;
+    			field.value = resultString.substring(0, resultString.length - 1);
 
   			  }
 

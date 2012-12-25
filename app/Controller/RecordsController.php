@@ -60,7 +60,18 @@ class RecordsController extends AppController{
 			$name = $this->request->data['Search']['name'];
 			//debug('name='.$name);
 
-			$qualifiers = $this->Record->Name->query('SELECT ("Name"."qualifier") as qualifiers, ("Name"."name") as names FROM "name" AS "Name" LEFT JOIN "public"."record" AS "Record" ON ("Name"."qualifier" = "Record"."qualifier") WHERE lower("Name"."name") LIKE \'%'.$name.'%\'');
+			$useRegion = $this->request->data['Search']['useRegion'];
+			$region =  $this->request->data['Search']['region'];
+
+			debug('region='.$region);
+
+			if ($useRegion) {
+				$qualifiers = $this->Record->Name->query('SELECT ("Name"."qualifier") as qualifiers, ("Name"."name") as names, ("Location"."location_point") as points FROM "name" AS "Name" LEFT JOIN "public"."record" AS "Record" ON ("Name"."qualifier" = "Record"."qualifier") LEFT JOIN "public"."location" as "Location" ON ("Record"."qualifier" = "Location"."qualifier") WHERE ("Location"."location_point") <@ polygon \' '.$region.' \'');
+			}
+			else{
+			$qualifiers = $this->Record->Name->query('SELECT ("Name"."qualifier") as qualifiers, ("Name"."name") as names FROM "name" AS "Name" LEFT JOIN "public"."record" AS "Record" ON ("Name"."qualifier" = "Record"."qualifier") WHERE lower("Name"."name") LIKE \'%'.$name.'%\'');	
+			}
+			
 	
 			$this->set('qualifiers', $qualifiers);
 		}
