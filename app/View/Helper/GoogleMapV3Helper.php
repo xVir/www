@@ -82,8 +82,8 @@ class GoogleMapV3Helper extends Helper {
 
 	
 	//DEFAULT MAP OPTIONS (function map())
-	var $defaultWidth="800px";					//Width of the map
-	var $defaultHeight="800px";					//Height of the map
+	var $defaultWidth="500px";					//Width of the map
+	var $defaultHeight="400px";					//Height of the map
 	var $defaultZoom=6;							//Default zoom
 	var $defaultType='HYBRID';					//Type of map (ROADMAP, SATELLITE, HYBRID or TERRAIN)
 	var $defaultLatitude=40.69847032728747;		//Default latitude if the browser doesn't support localization or you don't want localization
@@ -221,9 +221,11 @@ class GoogleMapV3Helper extends Helper {
 
     			field.value = resultString.substring(0, resultString.length - 1);
 
-  			  }
+  			  } ";
 
-  			function placeRegionMarker(location) {
+  			  if ($regionSelectAllowed) {
+  			  	$map .="  			  
+  				function placeRegionMarker(location) {
   
     			if (lineCoordinates==null) {
 		    		lineCoordinates = new google.maps.MVCArray();
@@ -266,6 +268,8 @@ class GoogleMapV3Helper extends Helper {
   			}
 
 		    ";
+		    }
+
 
 		    $map .= "
 			function setMarker(position){

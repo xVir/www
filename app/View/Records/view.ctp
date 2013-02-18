@@ -11,6 +11,7 @@
         <th>Lang</th>
         <th>Valid from</th>
         <th>Valid to</th>
+        <th></th>
     </tr>
 
 	
@@ -21,6 +22,7 @@
     	<td><?php echo $name['lang'] ?></td>
     	<td><?php echo $name['BeginDocument']['document_date'] ?></td>
     	<td><?php echo $name['EndDocument']['document_date'] ?></td>
+    	<td><?php echo $this->Html->link('View', array('controller'=>'names', 'action'=>'view', $name['id'])) ?></td>
     </tr>
     <?php endforeach; ?>
     <?php unset($name); ?>

@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"regio",
+				"regionSelectAllowed"
+			],
+			[
+				"regionsele",
+				"regionSelectFieldName"
+			],
+			[
+				"line",
+				"lineCoordinates"
+			],
+			[
+				"location",
+				"locationItem"
+			],
+			[
+				"fo",
+				"for	for (…) {…}"
+			],
+			[
+				"field",
+				"fieldId"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
 				"lon",
 				"longitude"
 			],
@@ -48,18 +80,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/View/Records/index.ctp",
-			"settings":
-			{
-				"buffer_size": 575,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "app/Controller/RecordsController.php",
 			"settings":
 			{
-				"buffer_size": 1983,
+				"buffer_size": 2641,
 				"line_ending": "Windows"
 			}
 		},
@@ -67,24 +91,16 @@
 			"file": "app/View/Records/find.ctp",
 			"settings":
 			{
-				"buffer_size": 657,
+				"buffer_size": 1440,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/Model/Name.php",
+			"file": "app/View/Helper/GoogleMapV3Helper.php",
 			"settings":
 			{
-				"buffer_size": 433,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/Model/Location.php",
-			"settings":
-			{
-				"buffer_size": 417,
-				"line_ending": "Windows"
+				"buffer_size": 13153,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -95,10 +111,6 @@
 		"selected_items":
 		[
 			[
-				"gs",
-				"Git: Status"
-			],
-			[
 				"gc",
 				"Git: Commit"
 			],
@@ -107,16 +119,40 @@
 				"Git: Add..."
 			],
 			[
+				"ini",
+				"Set Syntax: INI"
+			],
+			[
+				"gia",
+				"Git: Add..."
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"gs",
+				"Git: Status"
+			],
+			[
 				"wra",
 				"Word Wrap: Toggle"
 			],
 			[
 				"inde",
 				"Indentation: Reindent Lines"
-			],
-			[
-				"comm",
-				"Toggle Comment"
 			],
 			[
 				"g a",
@@ -129,10 +165,6 @@
 			[
 				"git st",
 				"Git: Status"
-			],
-			[
-				"git add",
-				"Git: Add..."
 			],
 			[
 				"git as",
@@ -169,10 +201,6 @@
 			[
 				"wrap",
 				"Word Wrap: Toggle"
-			],
-			[
-				"ini",
-				"Set Syntax: INI"
 			]
 		],
 		"width": 536.0
@@ -192,19 +220,34 @@
 	},
 	"file_history":
 	[
+		"/C/ZooPARK/data/rgeot/rgeot.z39",
+		"/C/Users/Danil/Dropbox/Аспирантура/выделение области на карте.html",
+		"/C/wamp/www/app/Model/Location.php",
+		"/C/wamp/www/app/Model/Name.php",
+		"/C/wamp/www/app/View/Records/index.ctp",
+		"/C/wamp/www/app/Controller/ZController.php",
+		"/C/wamp/www/app/View/Z/test.ctp",
+		"/C/wamp/bin/apache/apache2.2.22/bin/php.ini",
+		"/C/wamp/bin/php/php5.4.3/php.ini",
+		"/C/temp/yaz-1.1.2/yaz-1.1.2/php_yaz.h",
+		"/C/temp/yaz-1.1.2/yaz-1.1.2/php_yaz.c",
+		"/C/temp/yaz-1.1.2/yaz-1.1.2/README",
+		"/C/temp/yaz-1.1.2/yaz-1.1.2/config.m4",
+		"/C/ZooPARK/data/doc/php/php.ini",
+		"/C/wamp/wampmanager.ini",
+		"/C/Program Files/YAZ/README",
+		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/wamp/www/app/View/Locations/view.ctp",
 		"/C/wamp/www/app/View/Records/view.ctp",
 		"/C/wamp/www/app/Controller/LocationsController.php",
 		"/C/wamp/www/app/Controller/RecordsController.php",
 		"/C/wamp/www/app/View/Helper/GoogleMapV3Helper.php",
 		"/C/wamp/www/app/View/Layouts/default.ctp",
-		"/C/Users/Danil/Dropbox/Аспирантура/выделение области на карте.html",
-		"/C/wamp/www/app/View/Records/index.ctp",
 		"/C/wamp/www/app/Model/Record.php",
 		"/C/wamp/www/app/Model/RecordReference.php",
-		"/C/wamp/www/app/Model/Name.php",
 		"/C/wamp/www/app/Model/Document.php",
-		"/C/wamp/www/app/Model/Location.php",
 		"/C/wamp/www/app/View/Records/add.ctp",
 		"/C/wamp/www/app/View/Records/edit.ctp",
 		"/C/wamp/www/build.properties",
@@ -213,19 +256,16 @@
 		"/C/wamp/www/.gitignore",
 		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings",
 		"/C/wamp/www/README.md",
-		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences (Windows).sublime-settings",
 		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/SublimeCodeIntel/.codeintel/config",
 		"/C/wamp/www/app/Config/database.php",
-		"/C/wamp/bin/php/php5.4.3/php.ini",
 		"/C/wamp/apps/phpPgAdmin-5.0.4/conf/config.inc.php",
 		"/C/wamp/alias/phppgadmin.conf",
 		"/C/Users/Danil/Dropbox/Аспирантура/DICR-2012/request.txt",
 		"/C/Users/Danil/Dropbox/Аспирантура/DICR-2012/baikal_region.xml",
 		"/C/ZooPARK/data/rgeot/rgeot_zthes_xml.xml",
 		"/C/Users/Danil/AppData/Local/Temp/Temp1_cakephp-cakephp-2.2.4-0-g0b508b8.zip/cakephp-cakephp-b2812f2/README.md",
-		"/C/ZooPARK/data/rgeot/rgeot.z39",
 		"/C/wamp/bin/apache/apache2.2.22/conf/httpd.conf",
 		"/C/wamp/www/lib/Cake/Utility/Debugger.php",
 		"/C/wamp/www/app/Config/core.php",
@@ -263,6 +303,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"style",
+			"yaz",
+			"php_pg",
+			"php_",
+			"zlib",
+			"yaz",
+			"ctrl+d",
 			"BeginDocument",
 			"h1",
 			"(\n",
@@ -290,51 +337,23 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/View/Records/index.ctp",
-					"settings":
-					{
-						"buffer_size": 575,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								456,
-								301
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/Controller/RecordsController.php",
 					"settings":
 					{
-						"buffer_size": 1983,
+						"buffer_size": 2641,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1883,
-								1883
+								2280,
+								2280
 							]
 						],
 						"settings":
@@ -344,25 +363,25 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 741.0,
+						"translation.y": 798.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "app/View/Records/find.ctp",
 					"settings":
 					{
-						"buffer_size": 657,
+						"buffer_size": 1440,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								240,
-								240
+								790,
+								790
 							]
 						],
 						"settings":
@@ -377,19 +396,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/Model/Name.php",
+					"buffer": 2,
+					"file": "app/View/Helper/GoogleMapV3Helper.php",
 					"settings":
 					{
-						"buffer_size": 433,
+						"buffer_size": 13153,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								226,
-								226
+								9086,
+								9086
 							]
 						],
 						"settings":
@@ -398,34 +417,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/Model/Location.php",
-					"settings":
-					{
-						"buffer_size": 417,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								406,
-								406
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3502.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

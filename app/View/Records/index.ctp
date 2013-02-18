@@ -1,4 +1,4 @@
-<h1>Records</h1>
+<h2>Records</h2>
 <p><?php echo $this->Html->link('Add Record', array('action' => 'add')) ?></p>
 <table>
     <tr>

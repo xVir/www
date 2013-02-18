@@ -1,4 +1,4 @@
-<h1>Location</h1>
+<h2>Record Location</h2>
 <p>Type: <?php echo h($loc['Location']['location_type']); ?></p>
 <p><h3>Documents:</h3>
 
@@ -6,21 +6,18 @@
 		<tr>
 			<th></th>
 			<th>Description</th>
-			<th>URI</th>
 			<th>Date</th>
 		</tr>
 
 				<tr>
 					<td>Begin</td>
 					<td><?php echo $loc['BeginDocument']['description'] ?></td>
-					<td><?php echo $loc['BeginDocument']['uri'] ?></td>
 					<td><?php echo $loc['BeginDocument']['document_date'] ?></td>
 				</tr>
 
 				<tr>
 					<td>End</td>
 					<td><?php echo $loc['EndDocument']['description'] ?></td>
-					<td><?php echo $loc['EndDocument']['uri'] ?></td>
 					<td><?php echo $loc['EndDocument']['document_date'] ?></td>
 				</tr>
 
