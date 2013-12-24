@@ -96,20 +96,84 @@
 			}
 		},
 		{
-			"file": "app/View/Helper/GoogleMapV3Helper.php",
+			"file": "app/Controller/NamesController.php",
 			"settings":
 			{
-				"buffer_size": 13153,
-				"line_ending": "Unix"
+				"buffer_size": 284,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Controller/LocationsController.php",
+			"settings":
+			{
+				"buffer_size": 310,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/View/Names/view.ctp",
+			"settings":
+			{
+				"buffer_size": 636,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/View/Locations/view.ctp",
+			"settings":
+			{
+				"buffer_size": 1257,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/View/Records/index.ctp",
+			"settings":
+			{
+				"buffer_size": 575,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/View/Records/edit.ctp",
+			"settings":
+			{
+				"buffer_size": 245,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/View/Records/view.ctp",
+			"settings":
+			{
+				"buffer_size": 1965,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 242.0,
 		"selected_items":
 		[
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"git",
+				"Git: Status"
+			],
 			[
 				"gc",
 				"Git: Commit"
@@ -129,18 +193,6 @@
 			[
 				"git add",
 				"Git: Add..."
-			],
-			[
-				"comm",
-				"Git: Commit"
-			],
-			[
-				"add",
-				"Git: Add..."
-			],
-			[
-				"stat",
-				"Git: Status"
 			],
 			[
 				"gs",
@@ -168,10 +220,6 @@
 			],
 			[
 				"git as",
-				"Git: Status"
-			],
-			[
-				"git",
 				"Git: Status"
 			],
 			[
@@ -220,6 +268,8 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/app/View/Helper/GoogleMapV3Helper.php",
+		"/C/wamp/www/app/View/Records/view.ctp",
 		"/C/ZooPARK/data/rgeot/rgeot.z39",
 		"/C/Users/Danil/Dropbox/Аспирантура/выделение области на карте.html",
 		"/C/wamp/www/app/Model/Location.php",
@@ -240,10 +290,8 @@
 		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/Danil/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/wamp/www/app/View/Locations/view.ctp",
-		"/C/wamp/www/app/View/Records/view.ctp",
 		"/C/wamp/www/app/Controller/LocationsController.php",
 		"/C/wamp/www/app/Controller/RecordsController.php",
-		"/C/wamp/www/app/View/Helper/GoogleMapV3Helper.php",
 		"/C/wamp/www/app/View/Layouts/default.ctp",
 		"/C/wamp/www/app/Model/Record.php",
 		"/C/wamp/www/app/Model/RecordReference.php",
@@ -303,6 +351,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"placeRegionMarker",
 			"style",
 			"yaz",
 			"php_pg",
@@ -337,7 +386,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -352,8 +401,8 @@
 						"selection":
 						[
 							[
-								2280,
-								2280
+								405,
+								405
 							]
 						],
 						"settings":
@@ -363,7 +412,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 798.0,
+						"translation.y": 95.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -387,7 +436,9 @@
 						"settings":
 						{
 							"auto_name": "",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -397,27 +448,186 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/View/Helper/GoogleMapV3Helper.php",
+					"file": "app/Controller/NamesController.php",
 					"settings":
 					{
-						"buffer_size": 13153,
+						"buffer_size": 284,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9086,
-								9086
+								185,
+								185
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Controller/LocationsController.php",
+					"settings":
+					{
+						"buffer_size": 310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								244,
+								244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/View/Names/view.ctp",
+					"settings":
+					{
+						"buffer_size": 636,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								540,
+								540
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3502.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/View/Locations/view.ctp",
+					"settings":
+					{
+						"buffer_size": 1257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								549,
+								549
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/View/Records/index.ctp",
+					"settings":
+					{
+						"buffer_size": 575,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/View/Records/edit.ctp",
+					"settings":
+					{
+						"buffer_size": 245,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/View/Records/view.ctp",
+					"settings":
+					{
+						"buffer_size": 1965,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								617,
+								617
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 38.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
